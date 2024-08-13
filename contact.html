@@ -26,7 +26,7 @@
                 <h1>Contacto</h1>
                 <p>Estoy disponible para proyectos de diseño freelance o empleo de tiempo completo. No dudes en contactarme a través del siguiente formulario.</p>
                 
-                <form action="#" method="post">
+                <form id="contact-form">
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -41,5 +41,12 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Te responderemos pronto.');
+        });
+    </script>
 </body>
 </html>
